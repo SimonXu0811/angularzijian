@@ -1,4 +1,4 @@
-FROM node:latest as node-build
+FROM node:latest as build-node
 
 WORKDIR /usr/src/app
 
@@ -10,11 +10,11 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:latest as app-build
 
-COPY --from=node-build /usr/src/app/dist/angularzijian /usr/share/nginx/html
+FROM nginx:latest as prod-nginx
+
+COPY --from=build-node /usr/src/app/dist/angularzijian /usr/share/nginx/html
 
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
-
