@@ -12,6 +12,12 @@ import {AboutpageComponent} from './aboutpage/aboutpage.component';
 import {HomepageComponent} from './homepage/homepage.component';
 import {MatIconModule} from "@angular/material/icon";
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import { CollapseLanguageComponent } from './homepage/components/collapse-language/collapse-language.component';
+import { CollapseToolComponent } from './homepage/components/collapse-tool/collapse-tool.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { JumbotronGuessComponent } from './aboutpage/components/jumbotron-guess/jumbotron-guess.component';
+import { IampageComponent } from './iampage/iampage.component';
+import { CardContactComponent } from './iampage/components/card-contact/card-contact.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +26,20 @@ import {HashLocationStrategy, LocationStrategy} from "@angular/common";
     CollapseComponent,
     CardComponent,
     AboutpageComponent,
-    HomepageComponent
+    HomepageComponent,
+    CollapseLanguageComponent,
+    CollapseToolComponent,
+    JumbotronGuessComponent,
+    IampageComponent,
+    CardContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [
     {provide: LocationStrategy, useClass: HashLocationStrategy}

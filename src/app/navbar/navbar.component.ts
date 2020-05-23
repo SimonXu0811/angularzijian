@@ -20,4 +20,8 @@ export class NavbarComponent implements OnInit {
   nav2home() {
     this.router.navigate([''])
   }
+
+  nav2iam() {
+    this.router.navigate(['iam'])
+  }
 }
