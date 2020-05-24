@@ -18,6 +18,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { JumbotronGuessComponent } from './aboutpage/components/jumbotron-guess/jumbotron-guess.component';
 import { IampageComponent } from './iampage/iampage.component';
 import { CardContactComponent } from './iampage/components/card-contact/card-contact.component';
+import { CardWorkComponent } from './iampage/components/card-work/card-work.component';
+import { CardEducationComponent } from './iampage/components/card-education/card-education.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { CardContactComponent } from './iampage/components/card-contact/card-con
     CollapseToolComponent,
     JumbotronGuessComponent,
     IampageComponent,
-    CardContactComponent
+    CardContactComponent,
+    CardWorkComponent,
+    CardEducationComponent
   ],
   imports: [
     BrowserModule,

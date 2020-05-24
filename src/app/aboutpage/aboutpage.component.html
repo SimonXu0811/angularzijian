@@ -1,9 +1,46 @@
 <div class="container">
-  <div class="row">
+  <div class="row mb-1">
     <h2>How did I develop this website? </h2>
   </div>
-
   <app-jumbotron-guess></app-jumbotron-guess>
+  <div class="row mb-1">
+    <h2>The tools I use</h2>
+  </div>
+  <div class="row mb-1">
+    <div class="media">
+      <img alt="docker" class="mr-3" height="64px"
+           src="https://pbs.twimg.com/profile_images/1145722943688699904/n4u37v9t_400x400.png" width="64px">
+      <div class="media-body">
+        <h5 class="mt-0">Docker</h5>
+        This website is built as a docker imagine. And the dockerfile is first pull node image to run npm install. And
+        then, pull nginx to start website server.
+        Because this website is a SPA(Single Page Application), I reconfingure the nginx to handle routing 404.
+      </div>
+    </div>
+  </div>
 
+  <div class="row mb-1">
+    <div class="media">
+      <img alt="aws"
+           class="mr-3" height="64px" src="https://www.freebsdnews.com/wp-content/uploads/EC2-logo-full.jpg" width="64px">
+      <div class="media-body">
+        <h5 class="mt-0">AWS-EC2</h5>
+        The server is host on Amazon Linux 2 AMI. First, I configure and start EC2 instance. And then connect to the
+        virtual machine with SSH. Second, install all tools such as git and docker with yum. Third, pull the project
+        with
+        git, run dockerfile. Last, I run the container on the server, so I can get the access with public DNS(IPv4).
+      </div>
+    </div>
+  </div>
 
+  <div class="row mb-1">
+    <div class="media">
+      <img src="https://docs.signalfx.com/en/latest/_images/integration_awsroute53.png" class="mr-3" alt="route 53" width="64px" height="64px">
+      <div class="media-body">
+        <h5 class="mt-0">AWS-Route 53</h5>
+        To change the DNS, I use Route 53 to register a domain name. After the DNS registered successfully, I added the
+        hosted zones and record set. So now I can access my website with my domain name.
+      </div>
+    </div>
+  </div>
 </div>
