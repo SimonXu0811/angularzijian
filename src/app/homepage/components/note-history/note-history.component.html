@@ -1,0 +1,22 @@
+<div *ngIf="!isClosed">
+  <div class="card" style="width: auto;">
+    <div class="toast-header bg-success" style="color: white">
+      <strong class="mr-auto">History Note</strong>
+      <small>1 year ago</small>
+      <button (click)="close()" aria-label="Close" class="ml-2 mb-1 close" data-dismiss="toast" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Behind the website</h5>
+      <h6 class="card-subtitle mb-2 text-muted">My growth</h6>
+      <p class="card-text">In 2019, I am graduated with a bachelor's degree of Electrical Engineering.
+        I know little about programming...</p>
+      <p>In the past year, I have programmed with Java, Javascript, Python. I have experiences in backend developing with
+        Spring MVC, Express.js, Nest.js and in frontend with Angular 7+ and React.</p>
+      <p>Now I am focused on Full Stack Programing and develop myself</p>
+    </div>
+  </div>
+
+  <hr>
+</div>

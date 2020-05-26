@@ -20,6 +20,8 @@ import { IampageComponent } from './iampage/iampage.component';
 import { CardContactComponent } from './iampage/components/card-contact/card-contact.component';
 import { CardWorkComponent } from './iampage/components/card-work/card-work.component';
 import { CardEducationComponent } from './iampage/components/card-education/card-education.component';
+import { BooksComponent } from './homepage/components/books/books.component';
+import { NoteHistoryComponent } from './homepage/components/note-history/note-history.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { CardEducationComponent } from './iampage/components/card-education/card
     IampageComponent,
     CardContactComponent,
     CardWorkComponent,
-    CardEducationComponent
+    CardEducationComponent,
+    BooksComponent,
+    NoteHistoryComponent
   ],
   imports: [
     BrowserModule,
